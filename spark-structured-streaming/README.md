@@ -1,5 +1,10 @@
 ## Predicting KidSafe Content from Netflix Movies
 
+## PreReqs
+1. maven installed (I run maven `3.3.9`) - install with HomeBrew (`brew install maven@3.3`)
+2. java version 1.8.0 (I run `1.8.0_241`)
+3. scala version 2.11 (I run `2.11.12`)
+
 ### Build the Jar
 ~~~
 mvn clean verify
