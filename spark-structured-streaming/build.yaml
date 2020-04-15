@@ -1,0 +1,5 @@
+type: maven_application
+
+binary_path: target/spark-command-controller.jar
+
+pr_validation: true
