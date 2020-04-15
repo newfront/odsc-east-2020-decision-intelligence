@@ -1,9 +1,10 @@
 ## Predicting KidSafe Content from Netflix Movies
 
 ## PreReqs
-1. maven installed (I run maven `3.3.9`) - install with HomeBrew (`brew install maven@3.3`)
-2. java version 1.8.0 (I run `1.8.0_241`)
-3. scala version 2.11 (I run `2.11.12`)
+1. You have already gone through and run All the notebooks from http://bit.ly/learn-spark-ml. This will prime the redis keys necessary to run the streaming example.
+2. maven installed (I run maven `3.3.9`) - install with HomeBrew (`brew install maven@3.3`)
+3. java version 1.8.0 (I run `1.8.0_241`)
+4. scala version 2.11 (I run `2.11.12`)
 
 ### Build the Jar
 ~~~
@@ -26,12 +27,12 @@ scripts/run.sh
 ~~~
 
 ### Send Movies to be Predicted
-First open up a new terminal window and connect to the Redis docker instance
+First open up a new terminal window and connect to the Redis docker instance to monitor redis
 ~~~
-docker exec -it redis5 redis-cli
+docker exec -it redis5 redis-cli monitor
 ~~~
 
-Next open up another terminal window to monitor redis
+Next open up another terminal window to use the redis-cli
 ~~~
 docker exec -it redis5 redis-cli monitor
 ~~~
